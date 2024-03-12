@@ -1,0 +1,15 @@
+[user]
+	name = C3viche
+	email = crisemble@gmail.com
+[core]
+	editor = code --wait
+	excludesfile = /Users/crisemble/.gitignore_global
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = false
