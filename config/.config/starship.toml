@@ -2,6 +2,7 @@ format = """
 $username\
 $hostname\
 $directory\
+$python\
 $conda\
 $git_branch\
 $git_state\
@@ -16,8 +17,12 @@ $character"""
 palette = "catppuccin_macchiato"
 
 [conda]
-symbol = "🅒"
-format = '[$symbol $environment](teal) '
+symbol = "🅒 "
+format = '[$symbol $environment](teal)'
+
+[python]
+symbol = "" 
+format = '[$symbol $virtualenv](teal) '
 
 [nodejs]
 format = "[$symbol($version )]($style)"
